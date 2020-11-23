@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 82.5%;
+}
+
+body {
+    font-family: 'Goldman', cursive;
+}
+
+p {
+    font-size: 0.5rem;
+    display: none;
+}
+
+#container {
+    box-sizing: border-box;
+    margin: 10vh auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 80vh;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    box-sizing: border-box;
+    display: grid;
+    border: 2px solid rgb(238, 238, 238);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#numbers{
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    z-index: 1;
+}
+
+.number{
+    background-color: rgb(238, 238, 238);
+    border-radius: 2px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#clear {
+    background-color: rgb(238, 238, 238);
+    border-radius: 2px;
+    border: 1px solid black;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+#close {
+    width: 20px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    margin: -10px 0 0 55px;
+    font-size: 1rem;
+    text-shadow: 1px 1px 0px black;
+    color:red;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.tile {
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-collapse: collapse;
+    cursor: pointer;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.blocked {
+    background-color: rgba(0, 0, 0, 0.4);
+}
